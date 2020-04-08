@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Init();
+        init();
         double random=Math.random()*100;
         link.setText("http://myfile.org/"+String.valueOf(random));
 
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void Init() {
+    private void init() {
         buttonBack=findViewById(R.id.buttonBack);
         buttonNext=findViewById(R.id.buttonNext);
         link=findViewById(R.id.link);
